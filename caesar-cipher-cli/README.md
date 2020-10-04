@@ -5,8 +5,9 @@ This is an encryption cli-tool used [Сaesar cipher](https://www.wikiwand.com/en
 ### How to start
 
 1)  clone repository
-2)  cd caesar-cipher-cli folder
-3)  install dependencies via **npm install** or **yarn**
+2)  cd rss-node folder
+3)  cd caesar-cipher-cli folder
+4)  install dependencies via **npm install** or **yarn**
 
 ### How to use
 
