@@ -1,7 +1,7 @@
-const getReadStream = require("./getReadStream");
-const getWriteStream = require("./getWriteStream");
-const caesarCipher = require("./caesarCipherStream");
-const {processArgs, actions} = require("./processArgs");
+const getReadStream = require("./streams/getReadStream");
+const getWriteStream = require("./streams/getWriteStream");
+const caesarCipher = require("./streams/caesarCipherStream");
+const {processArgs, actions} = require("./utils/processArgs");
 const {promisify} = require('util')
 const stream = require("stream");
 const pipeline = promisify(stream.pipeline);

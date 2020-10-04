@@ -1,7 +1,7 @@
-const {actions} = require("./processArgs");
+const {actions} = require("../utils/processArgs");
 
-const encode = require("./encode");
-const decode = require("./decode");
+const encode = require("../utils/encode");
+const decode = require("../utils/decode");
 const {Transform} = require('stream');
 
 class CaesarCipherStream extends Transform {
