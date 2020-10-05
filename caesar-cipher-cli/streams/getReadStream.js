@@ -1,10 +1,10 @@
-const {resolve} = require('path')
+const resolvePath = require("../utils/resolvePath");
 const {createReadStream, existsSync} = require('fs')
 
 const getReadStream = (input) => {
     let readStream;
     if (input) {
-        const inputPath = resolve(__dirname, input);
+        const inputPath = resolvePath(input);
 
         if (existsSync(inputPath)) {
             readStream = createReadStream(inputPath, {encoding: 'utf-8'});
